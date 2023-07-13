@@ -9,13 +9,58 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        
+        ZStack {
+            Color(.systemYellow)
+                .ignoresSafeArea()
+            
+            VStack {
+                Text("ALL ABOUT")
+                    .font(.title)
+                .fontWeight(.bold)
+                
+                Text("MADELINE")
+                    .font(.title)
+                .fontWeight(.bold)
+               
+    
+                ZStack {
+                    HStack {
+                        
+                        Button("Facts") {
+                        
+                        }
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.pink)
+                        
+                        Text("Random fact placeholder")
+                            
+                            
+                           
+                    }
+              
+                    
+                }//button zstack
+                .background(Rectangle().frame(width: 300.0, height: 60.0) .foregroundColor(.white) )
+              //  .cornerRadius(0.05)
+                .padding()
+             //hey
+                
+                
+                
+               
+                
+                
+            }
+            .frame(height: 1.0)//Title's VStack
+
+            
+            
+        }//Zstack
+        
+        
     }
 }
 
