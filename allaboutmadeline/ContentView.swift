@@ -22,7 +22,7 @@ struct ContentView: View {
                 Text("MADELINE")
                     .font(.title)
                 .fontWeight(.bold)
-               
+               //tring to commit ieth buttons
     
                 ZStack {
                     HStack {
